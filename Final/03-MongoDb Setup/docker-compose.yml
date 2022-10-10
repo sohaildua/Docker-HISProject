@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mongoDB:
+     image: mongo
+     build: ./MasterBuild
+     container_name: "mongo_database"
+     ports:
+        - "27018:27019"
+ # deploy_service:
+   #  build:
+    #  context: .
+     # dockerfile: Dockerfile
+     #container_name: "deployer"
+     
+       
